@@ -7,8 +7,8 @@ let freqSlider;
 let lasts;
 
 function setup(){
-    createCanvas(windowWidth, windowHeight);
-    lasts = new Array(width-height);
+    createCanvas(window.innerWidth, window.innerHeight);
+    lasts = new Array(Math.abs(height-width));
     freqSlider = createSlider(0, 5, 1, 0.01);
     freqSlider.position(20, height-80);
     freqSlider.style('width', '160px');
